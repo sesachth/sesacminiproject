@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TrafficLens</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId={{ client_id }}&callback=initMap"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/map.js') }}"></script>
 </head>
 <body>
     <h1>TrafficLens 프로젝트입니다!</h1>
+    <h1>우리나라 지도</h1>
+    <div id="map"></div>
 </body>
 </html>
